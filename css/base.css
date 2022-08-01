@@ -1,0 +1,56 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: Inter, sans-serif;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    display: flex;
+    inset: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    overflow-y: auto;
+    overflow-x: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity, visibility;
+    transition-timing-function: ease-in-out;
+}
+
+.overlay_open {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 840px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 740px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+}
