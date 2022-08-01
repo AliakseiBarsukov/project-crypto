@@ -1,6 +1,7 @@
 import './module/modal.js'
 import './module/tabs.js'
 import './module/exchenge-rates.js'
+import './module/faq.js'
 
 const menuIconWrapper = document.querySelector('.menu-icon-wrapper');
 const menuIcon = document.querySelector('.menu-icon');
