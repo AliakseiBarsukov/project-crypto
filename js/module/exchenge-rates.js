@@ -1,6 +1,6 @@
 const exchengeRatesList = document.querySelector('.exchenge-rates__list');
 
-const socket = new WebSocket('ws://web-socket-current.herokuapp.com');
+const socket = new WebSocket('wss://web-socket-current.herokuapp.com');
 
 const renderExchenge = (wrapper, data) => {
     const {from, to, rate, change} = JSON.parse(data);
