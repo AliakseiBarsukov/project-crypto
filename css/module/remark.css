@@ -1,0 +1,14 @@
+.remark {
+    background-color: #08475E;
+    z-index: 990;
+}
+
+.remark__text {
+    padding: 20px 0;
+    font-family: 'IBM Plex Sans';
+    font-weight: 300;
+    font-size: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    overflow-y: hidden;
+}
