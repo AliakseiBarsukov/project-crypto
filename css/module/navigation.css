@@ -15,19 +15,15 @@
 
 @media (max-width: 768px) {
     .navigation__list {
-        display: none;
         padding: 16px 30px;
         margin: 0 auto;
         max-width: 740px;
-    }
-
-    .list-active {
-        display: flex;
     }
 }
 
 @media (max-width: 480px) {
     .navigation__list {
+        display: none;
         padding-left: 15px;
         padding-right: 15px;
         flex-direction: column;
@@ -41,5 +37,9 @@
 
     .navigation__item:last-child {
         margin-bottom: 0;
+    }
+
+    .list-active {
+        display: flex;
     }
 }
