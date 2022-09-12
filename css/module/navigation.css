@@ -15,9 +15,14 @@
 
 @media (max-width: 768px) {
     .navigation__list {
+        display: none;
         padding: 16px 30px;
         margin: 0 auto;
         max-width: 740px;
+    }
+
+    .list-active {
+        display: flex;
     }
 }
 

@@ -37,7 +37,7 @@ form.addEventListener('submit', (event) => {
     })
         .then((response) => response.json())
         .then(person => {
-        modalTitle.textContent = `${person.name} Ваша заявка принята, ваш номер ${person.id}`;
+        modalTitle.textContent = `${person.name} Ваша заявка принята, номер заявки ${person.id}`;
         form.remove();
 
         setTimeout(() => {
